@@ -4,7 +4,7 @@
   
   <br>
   <em>The UR20 building an optimized mixed-case pallet in the warehouse (<code>pallet_builder.py</code>).
-  <a href="media/pallet_builder.mp4">Full video (17 s, MP4)</a></em>
+  
 </p>
 
 Robot cells that weigh each box, set their grip force from that weight, and stack boxes precisely:

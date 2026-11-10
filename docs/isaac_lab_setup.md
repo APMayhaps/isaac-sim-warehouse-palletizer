@@ -1,5 +1,20 @@
 # Installing Isaac Lab for Isaac Sim 6.0 (Windows)
 
+## Quick setup (one script)
+
+`setup_isaaclab.ps1`, in the repo root, does every step below and then checks the result. From PowerShell, in the repo folder:
+
+```bash
+powershell -ExecutionPolicy Bypass -File .\setup_isaaclab.ps1
+```
+
+* **Defaults.** It expects Isaac Sim at `%USERPROFILE%\Downloads\isaac-sim-standalone-6.0.0-windows-x86_64` and puts Isaac Lab at `%USERPROFILE%\IsaacLab`. Use `-IsaacSimPath` and `-IsaacLabPath` to change them.
+* **Re-running is safe.** Each step checks what's already done and skips it.
+* **Partial runs.** `-SkipInstall` skips the roughly 9 GB install, and `-SkipVerify` skips the final test run.
+* **The final check** is a headless run of `isaaclab_pallet_cells.py` with one cell and one box. It should end with a line like `[ep 1] 1/1 box #11 ... placed ... place error 0.4 mm`.
+
+The rest of this page explains the same steps by hand.
+
 These are the steps used for this project, with the Isaac Sim 6.0.0 standalone zip already unpacked at `C:\Users\APMayhaps\Downloads\isaac-sim-standalone-6.0.0-windows-x86_64`.
 
 ## 1. Pick the matching Isaac Lab release
@@ -11,8 +26,10 @@ Isaac Lab's `main` branch targets Isaac Sim 6.2. For **Isaac Sim 6.0**, use the 
 A short path avoids Windows path-length problems. Long paths were already enabled on this machine (`LongPathsEnabled = 1`).
 
 ```bash
-git clone --depth 1 --branch v3.0.0-beta2.patch1 https://github.com/isaac-sim/IsaacLab.git C:\Users\APMayhaps\IsaacLab
+git -c core.longpaths=true clone --depth 1 --branch v3.0.0-beta2.patch1 https://github.com/isaac-sim/IsaacLab.git C:\Users\APMayhaps\IsaacLab
 ```
+
+`core.longpaths=true` matters. Git for Windows ignores the Windows long-path setting unless it's on, and in a longer folder the clone stops partway with "Filename too long" errors.
 
 ## 3. Link Isaac Sim into it
 

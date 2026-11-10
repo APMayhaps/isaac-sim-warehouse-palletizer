@@ -31,6 +31,7 @@ Robot cells that weigh each box, set their grip force from that weight, and stac
 | `warehouse_box_sorter.py` | The Franka small-box sorter in Isaac Sim |
 | `docs/architecture.md` | How the code is organized and how the simulation models suction, weighing and payload |
 | `docs/isaac_lab_setup.md` | Installing Isaac Lab for Isaac Sim 6.0 on Windows, including two fixes this install needed |
+| `setup_isaaclab.ps1` | One-step Isaac Lab setup for this project: clones the right release, links Isaac Sim, applies the fixes, installs and verifies |
 | `media/` | Demo video of the pallet builder (720p MP4) and the animated preview shown above |
 | `report_figures/` | Case-competition report figures for Section 4 (architecture, control flowchart, cycle swimlane, vacuum circuit, weight data flow, cell layout) as PNG and SVG, with captions (`captions.md`) and the script that draws them (`make_figures.py`, needs matplotlib) |
 
@@ -54,7 +55,13 @@ Small-box sorter (about 13 seconds per box; `--num-boxes 27` for a quick look):
 .\python.bat C:\Users\APMayhaps\Downloads\IsaacSimProject\warehouse_box_sorter.py
 ```
 
-**Isaac Lab** (see `docs/isaac_lab_setup.md` to install it), from a Command Prompt:
+**Isaac Lab.** Install it once with the setup script, from PowerShell in this repo's folder (details in `docs/isaac_lab_setup.md`):
+
+```bash
+powershell -ExecutionPolicy Bypass -File .\setup_isaaclab.ps1
+```
+
+Then, from a Command Prompt:
 
 ```bash
 cd /d C:\Users\APMayhaps\IsaacLab

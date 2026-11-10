@@ -32,6 +32,7 @@ Robot cells that weigh each box, set their grip force from that weight, and stac
 | `docs/architecture.md` | How the code is organized and how the simulation models suction, weighing and payload |
 | `docs/isaac_lab_setup.md` | Installing Isaac Lab for Isaac Sim 6.0 on Windows, including two fixes this install needed |
 | `media/` | Demo video of the pallet builder (720p MP4) and the animated preview shown above |
+| `report_figures/` | Case-competition report figures for Section 4 (architecture, control flowchart, cycle swimlane, vacuum circuit, weight data flow, cell layout) as PNG and SVG, with captions (`captions.md`) and the script that draws them (`make_figures.py`, needs matplotlib) |
 
 ## Run it
 

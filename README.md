@@ -1,5 +1,15 @@
 # Warehouse palletizing in Isaac Sim 6.0 and Isaac Lab: weight-adaptive grip, optimized pallets
 
+<p align="center">
+  <a href="media/pallet_builder.mp4">
+    <img src="media/pallet_builder_preview.gif" width="720"
+         alt="UR20 with a vacuum gripper picking boxes off the conveyor and building a mixed-case pallet in the warehouse">
+  </a>
+  <br>
+  <em>The UR20 building an optimized mixed-case pallet in the warehouse (<code>pallet_builder.py</code>).
+  <a href="media/pallet_builder.mp4">Full video (17 s, MP4)</a></em>
+</p>
+
 Robot cells that weigh each box, set their grip force from that weight, and stack boxes precisely:
 
 | | **Heavy mixed-case pallet** | **Small-box sorter** |
@@ -21,6 +31,7 @@ Robot cells that weigh each box, set their grip force from that weight, and stac
 | `warehouse_box_sorter.py` | The Franka small-box sorter in Isaac Sim |
 | `docs/architecture.md` | How the code is organized and how the simulation models suction, weighing and payload |
 | `docs/isaac_lab_setup.md` | Installing Isaac Lab for Isaac Sim 6.0 on Windows, including two fixes this install needed |
+| `media/` | Demo video of the pallet builder (720p MP4) and the animated preview shown above |
 
 ## Run it
 

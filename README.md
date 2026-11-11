@@ -1,8 +1,8 @@
 # Warehouse palletizing in Isaac Sim 6.0 and Isaac Lab: weight-adaptive grip, optimized pallets
 
 <p align="center">
-  <a href="media/pallet_builder.mp4">
-    <img src="media/pallet_builder_preview.gif" width="720"
+  <a href="pallet_builder_preview.gif">
+    <img src="pallet_builder_preview.gif" width="720"
          alt="UR20 with a vacuum gripper picking boxes off the conveyor and building a mixed-case pallet in the warehouse">
   </a>
   <br>

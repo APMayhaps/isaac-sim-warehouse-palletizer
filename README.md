@@ -17,7 +17,7 @@ Robot cells that weigh each box, set their grip force from that weight, and stac
 | Boxes | 1.5–**16 kg** (16 kg box + 4 kg gripper = the full 20 kg payload). Three footprints (30×30, 60×30, 60×60 cm), three heights, stacking-strength labels (some fragile) | 81 identical 5.5 cm cubes, 0.1–2 kg |
 | Pallet | 1.0 × 1.0 m wooden pallet, built as a 3×3×3 cube; the planner optimizes the layout | Three 3×3×3 cubes sorted by weight class |
 
-### Files
+### Filess
 
 | File | What it is |
 |---|---|

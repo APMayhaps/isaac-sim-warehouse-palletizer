@@ -1,7 +1,6 @@
 # Warehouse palletizing in Isaac Sim 6.0 and Isaac Lab: weight-adaptive grip, optimized pallets
 
 <p align="center">
-    <a href="media/pallet_builder.mp4">Full video (17 s, MP4)</a></em>
   <br>
   <em>The UR20 building an optimized mixed-case pallet in the warehouse (<code>pallet_builder.py</code>).
   
